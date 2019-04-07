@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "NeeleyCompany",
+  "builds": [
+    {
+      "src": "index.py",
+      "use": "@contextualist/python-wsgi",
+      "config": { "maxLambdaSize": "60mb" }
+    }
+  ],
+  "routes": [{ "src": "/.*", "dest": "/" }]
+}

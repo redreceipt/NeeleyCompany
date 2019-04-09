@@ -4,9 +4,7 @@
   "builds": [
     {
       "src": "index.py",
-      "use": "@contextualist/python-wsgi",
-      "config": { "maxLambdaSize": "60mb" }
+      "use": "@now/python@canary"
     }
-  ],
-  "routes": [{ "src": "/.*", "dest": "/" }]
+  ]
 }

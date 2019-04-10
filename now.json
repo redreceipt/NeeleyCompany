@@ -4,7 +4,8 @@
   "builds": [
     {
       "src": "index.py",
-      "use": "@now/python-wsgi"
+      "use": "@now/python@canary",
+      "config": { "maxLambdaSize": "25mb" }
     }
   ]
 }
